@@ -1,17 +1,58 @@
 {
   "VCALENDAR": [
     {
+      "CALSCALE": "GREGORIAN",
       "VERSION": "2.0",
-      "PRODID": "-//gnostr/ical 1.0/EN",
+      "X-WR-CALNAME": "gnostr-ical-test-event",
+      "METHOD": "PUBLISH",
+      "PRODID": "-//Apple Inc.//Mac OS X 10.15.7//EN",
+      "VTIMEZONE": [
+        {
+          "TZID": "America/New_York",
+          "DAYLIGHT": [
+            {
+              "TZOFFSETFROM": "-0500",
+              "RRULE": "FREQ=YEARLY;BYMONTH=3;BYDAY=2SU",
+              "DTSTART": "20070311T020000",
+              "TZNAME": "EDT",
+              "TZOFFSETTO": "-0400"
+            }
+          ],
+          "STANDARD": [
+            {
+              "TZOFFSETFROM": "-0400",
+              "RRULE": "FREQ=YEARLY;BYMONTH=11;BYDAY=1SU",
+              "DTSTART": "20071104T020000",
+              "TZNAME": "EST",
+              "TZOFFSETTO": "-0500"
+            }
+          ]
+        }
+      ],
       "VEVENT": [
         {
-          "UID": "c5f5d92ffbac108ec71a4332ad56ca3f30578c561faa64a82f6256c256fce7f5",
-          "DTSTAMP;VALUE=DATE-TIME": "20235904095930",
-          "DTSTART;VALUE=DATE-TIME": "20230004100000",
-          "DTEND;VALUE=DATE-TIME": "20230004100001",
-          "SUMMARY": "CONTENT",
-          "DESCRIPTION": "GNOSTR_EVENT_TAG",
-          "LOCATION": "RELAY/WEEBLE/WOBBLE/SIGNATURE"
+          "TRANSP": "OPAQUE",
+          "DTEND;TZID=America/New_York": "20231204T120000",
+          "UID": "F00BB685-23A6-40B8-8E78-3DAE342A9B57",
+          "DTSTAMP": "20231204T153456Z",
+          "DESCRIPTION": "event note",
+          "URL;VALUE=URI": "event%20url",
+          "SEQUENCE": "1",
+          "X-APPLE-TRAVEL-ADVISORY-BEHAVIOR": "AUTOMATIC",
+          "SUMMARY": "gnostr-ical-test-event",
+          "LAST-MODIFIED": "20231204T153456Z",
+          "CREATED": "20231204T153419Z",
+          "DTSTART;TZID=America/New_York": "20231204T110000",
+          "VALARM": [
+            {
+              "UID": "CC852FA9-BCFF-489C-AF21-34AA7822BA89",
+              "X-APPLE-DEFAULT-ALARM": "TRUE",
+              "TRIGGER": "-PT1H",
+              "ACTION": "AUDIO",
+              "ATTACH;VALUE=URI": "Chord",
+              "X-WR-ALARMUID": "CC852FA9-BCFF-489C-AF21-34AA7822BA89"
+            }
+          ]
         }
       ]
     }
