@@ -1,0 +1,19 @@
+{
+  "VCALENDAR": [
+    {
+      "VERSION": "2.0",
+      "PRODID": "-//gnostr/ical 1.0/EN",
+      "VEVENT": [
+        {
+          "UID": "c5f5d92ffbac108ec71a4332ad56ca3f30578c561faa64a82f6256c256fce7f5",
+          "DTSTAMP;VALUE=DATE-TIME": "20235904095930",
+          "DTSTART;VALUE=DATE-TIME": "20230004100000",
+          "DTEND;VALUE=DATE-TIME": "20230004100001",
+          "SUMMARY": "CONTENT",
+          "DESCRIPTION": "GNOSTR_EVENT_TAG",
+          "LOCATION": "RELAY/WEEBLE/WOBBLE/SIGNATURE"
+        }
+      ]
+    }
+  ]
+}
